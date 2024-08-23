@@ -1,8 +1,7 @@
 'use client';
-import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon, VercelLogoIcon } from '@radix-ui/react-icons';
+import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import React, { useState } from 'react';
 
-import { ModeToggle } from '@/components/page-ui/ModeToggle';
 import { HoveredLink, Menu, MenuItem } from '@/components/ui/navbar-menu';
 import { cn } from '@/lib/utils';
 
@@ -40,12 +39,8 @@ function NavbarComponent({ className }: { className?: string }) {
                             <TwitterLogoIcon className="mr-1" />
                             X/Twitter
                         </HoveredLink>
-                        <HoveredLink href="https://safetpojskic.netlify.app/" rel="noopener noreferrer" target="_blank">
-                            <VercelLogoIcon className="mr-1" /> Old Portfolio
-                        </HoveredLink>
                     </div>
                 </MenuItem>
-                <ModeToggle />
             </Menu>
         </div>
     );
