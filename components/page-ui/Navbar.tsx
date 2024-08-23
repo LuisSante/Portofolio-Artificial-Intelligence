@@ -1,5 +1,5 @@
 'use client';
-import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
+import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
 import React, { useState } from 'react';
 
 import { HoveredLink, Menu, MenuItem } from '@/components/ui/navbar-menu';
@@ -29,15 +29,11 @@ function NavbarComponent({ className }: { className?: string }) {
                 </MenuItem>
                 <MenuItem setActive={setActive} active={active} item="Social">
                     <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="https://github.com/spojskic" rel="noopener noreferrer" target="_blank">
+                        <HoveredLink href="https://github.com/LuisSante" rel="noopener noreferrer" target="_blank">
                             <GitHubLogoIcon className="mr-1" /> Github
                         </HoveredLink>
-                        <HoveredLink href="https://www.linkedin.com/in/mrpojskic/" rel="noopener noreferrer" target="_blank">
+                        <HoveredLink href="https://www.linkedin.com/in/luis-felipe-sante-taipe-0ba00723b/" rel="noopener noreferrer" target="_blank">
                             <LinkedInLogoIcon className="mr-1" /> Linkedin
-                        </HoveredLink>
-                        <HoveredLink href="https://twitter.com/magicpojska" rel="noopener noreferrer" target="_blank">
-                            <TwitterLogoIcon className="mr-1" />
-                            X/Twitter
                         </HoveredLink>
                     </div>
                 </MenuItem>
