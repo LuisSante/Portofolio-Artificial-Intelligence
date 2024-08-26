@@ -43,6 +43,16 @@ const skills = [
         icon: <FaPython />
     },
     {
+        title: 'PyTorch',
+        link: 'https://pytorch.org/',
+        icon: <SiPytorch />
+    },
+    {
+        title: 'TensorFlow',
+        link: 'https://www.postgresql.org',
+        icon: <SiTensorflow />
+    },
+    {
         title: 'Keras',
         link: 'https://nextjs.org',
         icon: <SiKeras />
@@ -51,16 +61,6 @@ const skills = [
         title: 'Pandas',
         link: 'https://tailwindcss.com',
         icon: <SiPandas />
-    },
-    {
-        title: 'TensorFlow',
-        link: 'https://www.postgresql.org',
-        icon: <SiTensorflow />
-    },
-    {
-        title: 'PyTorch',
-        link: 'https://pytorch.org/',
-        icon: <SiPytorch />
     },
     {
         title: 'Scikit-Learn',
