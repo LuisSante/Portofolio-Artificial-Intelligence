@@ -39,7 +39,7 @@ export function SkillsSection() {
 const skills = [
     {
         title: 'Python',
-        link: 'https://react.dev/',
+        link: 'https://www.python.org/',
         icon: <FaPython />
     },
     {
@@ -49,17 +49,17 @@ const skills = [
     },
     {
         title: 'TensorFlow',
-        link: 'https://www.postgresql.org',
+        link: 'https://www.tensorflow.org/',
         icon: <SiTensorflow />
     },
     {
         title: 'Keras',
-        link: 'https://nextjs.org',
+        link: 'https://keras.io/',
         icon: <SiKeras />
     },
     {
         title: 'Pandas',
-        link: 'https://tailwindcss.com',
+        link: 'https://pandas.pydata.org/',
         icon: <SiPandas />
     },
     {

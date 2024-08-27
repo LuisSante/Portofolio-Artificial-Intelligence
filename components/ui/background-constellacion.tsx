@@ -17,11 +17,12 @@ const animateCircle = { opacity: [1, 0, 1] }
 export const BackgroundConstellacion = () => {
     return (
         <div
-            className='z-index-[-1] absolute inset-0 md:flex justify-center items-center hidden w-full h-full [mask-size:40px] [mask-repeat:no-repeat]'
+            className='absolute inset-0 md:flex justify-center items-center hidden sm:w-full md:w-full lg:w-full sm:h-full md:h-full lg:h-full [mask-size:40px] [mask-repeat:no-repeat]'
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 3993.78 2534.03"
+                className="w-1/2 sm:w-1/3 md:w-full h-1/2 sm:h-1/3 md:h-full"
             >
                 <g>
                     <g id="Layer_1" data-name="Layer 1">

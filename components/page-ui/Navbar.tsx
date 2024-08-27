@@ -24,6 +24,7 @@ function NavbarComponent({ className }: { className?: string }) {
                         <HoveredLink href="#experience">Experience</HoveredLink>
                         <HoveredLink href="#skills">Skills</HoveredLink>
                         <HoveredLink href="#projects">Projects</HoveredLink>
+                        <HoveredLink href="#research-project">Research Project</HoveredLink>
                         <HoveredLink href="#contact-me">Contact Me</HoveredLink>
                     </div>
                 </MenuItem>
