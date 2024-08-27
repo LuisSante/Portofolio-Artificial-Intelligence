@@ -4,9 +4,15 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { cn } from '@/lib/utils';
 
+const randomDelay = Math.random() * 5;
+const initial = { opacity: 1 };
 const animate = { opacity: [0, 1], scale: [0.5, 1], pathLength: [0, 1] };
-const transition = { duration: 5, ease: "easeInOut", repeat: Infinity };
-const animateCircle = { opacity: [0, 1], scale: [0.5, 1] }
+const transition = {
+    repeat: Infinity,
+    repeatDelay: randomDelay,
+    duration: 1 + randomDelay,
+};
+const animateCircle = { opacity: [1, 0, 1] }
 
 export const BackgroundConstellacion = () => {
     return (
@@ -12124,6 +12130,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m3832.65,1092.55c7.65,0,13.85,6.2,13.85,13.85s-6.2,13.85-13.85,13.85-13.85-6.2-13.85-13.85,6.2-13.85,13.85-13.85Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="3816.54" cy="1181.94" r="11.39" transform="translate(1793.31 4627.15) rotate(-76.78)" fill="#00d1b4" />
@@ -12148,6 +12155,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m3745.32,686.26c4.93,0,8.93,4,8.93,8.93s-4,8.93-8.93,8.93-8.93-4-8.93-8.93,4-8.93,8.93-8.93Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="3717.1" cy="524.42" r="8.72" transform="translate(82.26 1462.39) rotate(-22.5)" fill="#00d1b4" />
@@ -12167,6 +12175,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m3600.92,332.4c3.97,0,7.18,3.22,7.18,7.18s-3.22,7.18-7.18,7.18-7.18-3.22-7.18-7.18,3.22-7.18,7.18-7.18Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="3674.3" cy="281.91" r="6.77" fill="#00d1b4" />
@@ -12241,6 +12250,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m3607.08,1266.71c5.72,0,10.36,4.64,10.36,10.37s-4.64,10.37-10.36,10.37-10.37-4.64-10.37-10.37,4.64-10.37,10.37-10.37Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="3522.83" cy="1209.24" r="9.75" transform="translate(1763.29 4492.01) rotate(-80.75)" fill="#00d1b4" />
@@ -12250,6 +12260,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m3470.18,1023.79c4.93,0,8.93,4,8.93,8.93s-4,8.93-8.93,8.93-8.93-4-8.93-8.93,4-8.93,8.93-8.93Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="3674.3" cy="877.65" r="8.83" fill="#00d1b4" />
@@ -12279,6 +12290,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m3503.33,465.41c3.74,0,6.77,3.03,6.77,6.77s-3.03,6.77-6.77,6.77-6.77-3.03-6.77-6.77,3.03-6.77,6.77-6.77Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="3529.29" cy="457.3" r="6.47" fill="#00d1b4" />
@@ -12328,10 +12340,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2818.92,2189c8.62,0,15.6,6.98,15.6,15.6s-6.98,15.6-15.6,15.6-15.6-6.98-15.6-15.6,6.98-15.6,15.6-15.6Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2916.72" cy="2037.53" r="15.29" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2700.28" cy="1558.37" r="13.03" transform="translate(-411.45 1751.13) rotate(-33.53)" fill="#00d1b4" />
@@ -12426,6 +12440,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m3456.22,352.11c2.55,0,4.62,2.07,4.62,4.62s-2.07,4.62-4.62,4.62-4.62-2.07-4.62-4.62,2.07-4.62,4.62-4.62Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="3412.61" cy="328.71" r="4.52" fill="#00d1b4" />
@@ -12440,6 +12455,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2498.52,2324.57c7.82,0,14.16,6.34,14.16,14.16s-6.34,14.16-14.16,14.16-14.16-6.34-14.16-14.16,6.34-14.16,14.16-14.16Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2478.3" cy="2154.11" r="12.83" transform="translate(-187.58 4071.21) rotate(-76.72)" fill="#00d1b4" />
@@ -12534,6 +12550,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m3353.29,499.17c2.61,0,4.72,2.11,4.72,4.72s-2.11,4.72-4.72,4.72-4.72-2.11-4.72-4.72,2.11-4.72,4.72-4.72Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="3286.89" cy="454.63" r="4.52" fill="#00d1b4" />
@@ -12643,6 +12660,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m3191.04,602.41c2.61,0,4.72,2.11,4.72,4.72s-2.11,4.72-4.72,4.72-4.72-2.11-4.72-4.72,2.11-4.72,4.72-4.72Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="3227.37" cy="547.1" r="4.52" fill="#00d1b4" />
@@ -12667,6 +12685,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2030.14,2343.35c6.35,0,11.49,5.15,11.49,11.49s-5.15,11.49-11.49,11.49-11.49-5.15-11.49-11.49,5.15-11.49,11.49-11.49Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2017" cy="2155.75" r="10.16" transform="translate(-933.58 2057.64) rotate(-45)" fill="#00d1b4" />
@@ -12686,6 +12705,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2540.29,1733.65c4.65,0,8.42,3.77,8.42,8.41s-3.77,8.42-8.42,8.42-8.42-3.77-8.42-8.42,3.77-8.41,8.42-8.41Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2585.34" cy="1654.22" r="7.49" transform="translate(-421.18 1036.77) rotate(-21.01)" fill="#00d1b4" />
@@ -12710,6 +12730,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2698.54,1125.39c3.46,0,6.26,2.8,6.26,6.26s-2.8,6.26-6.26,6.26-6.26-2.8-6.26-6.26,2.8-6.26,6.26-6.26Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2637.17" cy="1050.48" r="6.16" fill="#00d1b4" />
@@ -12719,6 +12740,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2550.76,855.69c3.34,0,6.06,2.71,6.06,6.05s-2.71,6.06-6.06,6.06-6.05-2.71-6.05-6.06,2.71-6.05,6.05-6.05Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2555.17" cy="744.34" r="5.85" fill="#00d1b4" />
@@ -12733,6 +12755,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2678.42,557.77c3,0,5.44,2.43,5.44,5.44s-2.44,5.44-5.44,5.44-5.44-2.44-5.44-5.44,2.43-5.44,5.44-5.44Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2727.58" cy="569.67" r="5.13" fill="#00d1b4" />
@@ -12757,6 +12780,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m3056.6,592.36c2.38,0,4.31,1.93,4.31,4.31s-1.93,4.31-4.31,4.31-4.31-1.93-4.31-4.31,1.93-4.31,4.31-4.31Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="3051.26" cy="561.46" r="4.21" fill="#00d1b4" />
@@ -12791,6 +12815,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2144.77,1842.44c4.65,0,8.42,3.77,8.42,8.42s-3.77,8.42-8.42,8.42-8.41-3.77-8.41-8.42,3.77-8.42,8.41-8.42Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2445.05" cy="1725.55" r="7.49" fill="#00d1b4" />
@@ -12800,6 +12825,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2521.82,1643.03c3.91,0,7.08,3.17,7.08,7.08s-3.17,7.08-7.08,7.08-7.08-3.17-7.08-7.08,3.17-7.08,7.08-7.08Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2595.61" cy="1538.25" r="6.77" fill="#00d1b4" />
@@ -12864,6 +12890,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2860.38,696.11c2.38,0,4.31,1.93,4.31,4.31s-1.93,4.31-4.31,4.31-4.31-1.93-4.31-4.31,1.93-4.31,4.31-4.31Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2874.75" cy="636.18" r="4.21" fill="#00d1b4" />
@@ -12903,14 +12930,17 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1924.13,1870.35c4.19,0,7.59,3.4,7.59,7.59s-3.4,7.59-7.59,7.59-7.59-3.4-7.59-7.59,3.4-7.59,7.59-7.59Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2113.06" cy="1807.75" r="7.08" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2270.18" cy="1732.83" r="6.77" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2350.33" cy="1608.96" r="6.26" fill="#00d1b4" />
@@ -12960,6 +12990,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2477.07,674.25c2.72,0,4.93,2.21,4.93,4.93s-2.21,4.93-4.93,4.93-4.93-2.21-4.93-4.93,2.21-4.93,4.93-4.93Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2643.22" cy="721.15" r="4.52" fill="#00d1b4" />
@@ -12984,6 +13015,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2764.83,665.73c2.15,0,3.9,1.75,3.9,3.9s-1.75,3.9-3.9,3.9-3.9-1.75-3.9-3.9,1.75-3.9,3.9-3.9Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2854.43" cy="630.33" r="3.9" fill="#00d1b4" />
@@ -12993,6 +13025,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2816.46,587.63c2.04,0,3.69,1.65,3.69,3.69s-1.65,3.69-3.69,3.69-3.69-1.65-3.69-3.69,1.65-3.69,3.69-3.69Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1154.74" cy="2385.74" r="9.13" transform="translate(-1432.48 2961.46) rotate(-76.72)" fill="#00d1b4" />
@@ -13047,10 +13080,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2323.96,1305.81c3.06,0,5.54,2.48,5.54,5.54s-2.48,5.54-5.54,5.54-5.54-2.48-5.54-5.54,2.48-5.54,5.54-5.54Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2156.27" cy="1111.13" r="5.54" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2048.2" cy="950.83" r="5.34" fill="#00d1b4" />
@@ -13080,6 +13115,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2471.84,799.25c2.38,0,4.31,1.93,4.31,4.31s-1.93,4.31-4.31,4.31-4.31-1.93-4.31-4.31,1.93-4.31,4.31-4.31Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2601.45" cy="824.08" r="4.21" fill="#00d1b4" />
@@ -13109,6 +13145,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2746.77,628.79c2.04,0,3.69,1.65,3.69,3.69s-1.65,3.69-3.69,3.69-3.69-1.65-3.69-3.69,1.65-3.69,3.69-3.69Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1005.32" cy="2480.77" r="9.13" transform="translate(-1608.11 3059.44) rotate(-80.43)" fill="#00d1b4" />
@@ -13128,6 +13165,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1593.47,1939.32c4.02,0,7.29,3.26,7.29,7.29s-3.26,7.29-7.29,7.29-7.29-3.26-7.29-7.29,3.26-7.29,7.29-7.29Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1577.15" cy="1907.09" r="6.77" fill="#00d1b4" />
@@ -13232,6 +13270,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m660.19,2501.19c4.7,0,8.52,3.81,8.52,8.52s-3.81,8.52-8.52,8.52-8.52-3.81-8.52-8.52,3.81-8.52,8.52-8.52Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="777.29" cy="2315.75" r="8.11" fill="#00d1b4" />
@@ -13246,6 +13285,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1153.51,2006.64c3.97,0,7.18,3.22,7.18,7.18s-3.22,7.18-7.18,7.18-7.18-3.22-7.18-7.18,3.22-7.18,7.18-7.18Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1266.4" cy="1970.72" r="6.77" fill="#00d1b4" />
@@ -13335,10 +13375,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2494.01,823.37c2.04,0,3.69,1.65,3.69,3.69s-1.65,3.69-3.69,3.69-3.69-1.65-3.69-3.69,1.65-3.69,3.69-3.69Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2437.66" cy="799.04" r="3.59" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2525.1" cy="755.84" r="3.59" fill="#00d1b4" />
@@ -13358,6 +13400,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m820.7,2113.16c4.02,0,7.29,3.26,7.29,7.29s-3.26,7.29-7.29,7.29-7.29-3.26-7.29-7.29,3.26-7.29,7.29-7.29Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="952.57" cy="2057.95" r="7.08" fill="#00d1b4" />
@@ -13392,6 +13435,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1909.25,1474.73c2.72,0,4.93,2.21,4.93,4.93s-2.21,4.93-4.93,4.93-4.93-2.21-4.93-4.93,2.21-4.93,4.93-4.93Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1965.38" cy="1407.3" r="4.82" fill="#00d1b4" />
@@ -13446,6 +13490,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2334.83,869.96c1.98,0,3.59,1.61,3.59,3.59s-1.61,3.59-3.59,3.59-3.59-1.61-3.59-3.59,1.61-3.59,3.59-3.59Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2394.77" cy="801.92" r="3.59" fill="#00d1b4" />
@@ -13510,6 +13555,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1754.59,1616.15c2.66,0,4.82,2.16,4.82,4.82s-2.16,4.82-4.82,4.82-4.82-2.16-4.82-4.82,2.16-4.82,4.82-4.82Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1815.04" cy="1530.25" r="4.82" fill="#00d1b4" />
@@ -13529,6 +13575,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1899.8,1280.15c2.44,0,4.41,1.98,4.41,4.41s-1.98,4.41-4.41,4.41-4.41-1.98-4.41-4.41,1.98-4.41,4.41-4.41Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1929.05" cy="1196.31" r="4.21" fill="#00d1b4" />
@@ -13548,6 +13595,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2172.17,1124.37c2.1,0,3.8,1.7,3.8,3.8s-1.7,3.8-3.8,3.8-3.8-1.7-3.8-3.8,1.7-3.8,3.8-3.8Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2262.07" cy="1116.05" r="3.59" fill="#00d1b4" />
@@ -13717,6 +13765,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m283.86,2240.52c3.63,0,6.57,2.94,6.57,6.57s-2.94,6.57-6.57,6.57-6.57-2.94-6.57-6.57,2.94-6.57,6.57-6.57Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="493.22" cy="2111.01" r="6.16" fill="#00d1b4" />
@@ -13746,6 +13795,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1693.12,1947.94c2.55,0,4.62,2.07,4.62,4.62s-2.07,4.62-4.62,4.62-4.62-2.07-4.62-4.62,2.07-4.62,4.62-4.62Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1809.19" cy="1897.96" r="4.52" fill="#00d1b4" />
@@ -13760,10 +13810,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1602.91,1535.48c2.38,0,4.31,1.93,4.31,4.31s-1.93,4.31-4.31,4.31-4.31-1.93-4.31-4.31,1.93-4.31,4.31-4.31Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1642.11" cy="1462.41" r="4.21" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1707.18" cy="1397.97" r="4.21" fill="#00d1b4" />
@@ -13778,6 +13830,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1646.83,1187.99c2.27,0,4.11,1.84,4.11,4.1s-1.84,4.11-4.11,4.11-4.11-1.84-4.11-4.11,1.84-4.1,4.11-4.1Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1722.77" cy="1185.84" r="3.9" fill="#00d1b4" />
@@ -13797,10 +13850,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2349.51,1259.93c1.76,0,3.18,1.42,3.18,3.18s-1.42,3.18-3.18,3.18-3.18-1.42-3.18-3.18,1.42-3.18,3.18-3.18Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2302.1" cy="1204.41" r="3.18" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2108.24" cy="1008.6" r="3.28" fill="#00d1b4" />
@@ -13885,6 +13940,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1811.34,1361.23c2.04,0,3.69,1.65,3.69,3.69s-1.65,3.69-3.69,3.69-3.69-1.65-3.69-3.69,1.65-3.69,3.69-3.69Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1964.77" cy="1392.73" r="3.59" fill="#00d1b4" />
@@ -13929,6 +13985,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2144.46,916.34c1.64,0,2.98,1.33,2.98,2.98s-1.33,2.98-2.98,2.98-2.98-1.33-2.98-2.98,1.33-2.98,2.98-2.98Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="184.73" cy="2355.87" r="6.16" fill="#00d1b4" />
@@ -13938,6 +13995,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m272.88,2243.19c3.34,0,6.05,2.71,6.05,6.05s-2.71,6.06-6.05,6.06-6.06-2.71-6.06-6.06,2.71-6.05,6.06-6.05Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="371.4" cy="2189.62" r="5.85" fill="#00d1b4" />
@@ -13967,6 +14025,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1128.88,1781.58c2.55,0,4.62,2.07,4.62,4.62s-2.07,4.62-4.62,4.62-4.62-2.07-4.62-4.62,2.07-4.62,4.62-4.62Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1501.21" cy="1807.65" r="4.21" fill="#00d1b4" />
@@ -14076,6 +14135,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m961.81,2017.41c2.55,0,4.62,2.07,4.62,4.62s-2.07,4.62-4.62,4.62-4.62-2.07-4.62-4.62,2.07-4.62,4.62-4.62Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1064.02" cy="1931.21" r="4.52" transform="translate(-1012.69 2672.15) rotate(-80.78)" fill="#00d1b4" />
@@ -14095,6 +14155,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1445.07,1782.81c2.21,0,4,1.79,4,4s-1.79,4-4,4-4-1.79-4-4,1.79-4,4-4Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1428.03" cy="1615.63" r="3.9" fill="#00d1b4" />
@@ -14154,6 +14215,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m2044.61,1128.78c1.59,0,2.87,1.29,2.87,2.87s-1.29,2.87-2.87,2.87-2.87-1.29-2.87-2.87,1.29-2.87,2.87-2.87Z" fill="#00d1b4" opacity=".99" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="2035.17" cy="1062.69" r="2.87" fill="#00d1b4" opacity=".95" />
@@ -14203,6 +14265,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1427.32,1958.51c2.21,0,4,1.79,4,4s-1.79,4-4,4-4-1.79-4-4,1.79-4,4-4Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1524.3" cy="1921.87" r="3.9" fill="#00d1b4" />
@@ -14392,6 +14455,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m76.05,2203.99c2.72,0,4.93,2.21,4.93,4.93s-2.21,4.93-4.93,4.93-4.93-2.21-4.93-4.93,2.21-4.93,4.93-4.93Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="162.76" cy="2078.89" r="4.82" fill="#00d1b4" />
@@ -14456,6 +14520,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1863.99,1473.09c1.59,0,2.87,1.29,2.87,2.87s-1.29,2.87-2.87,2.87-2.87-1.29-2.87-2.87,1.29-2.87,2.87-2.87Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1814.21" cy="1423.31" r="2.87" fill="#00d1b4" opacity=".97" />
@@ -14505,6 +14570,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m241.48,2182.23c2.55,0,4.62,2.07,4.62,4.62s-2.07,4.62-4.62,4.62-4.62-2.07-4.62-4.62,2.07-4.62,4.62-4.62Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="334.76" cy="2029.93" r="4.52" fill="#00d1b4" />
@@ -14569,6 +14635,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1570.27,1422.39c1.64,0,2.98,1.33,2.98,2.98s-1.33,2.98-2.98,2.98-2.98-1.33-2.98-2.98,1.33-2.98,2.98-2.98Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1755.41" cy="1439.53" r="2.87" fill="#00d1b4" opacity=".97" />
@@ -14618,6 +14685,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m438.21,2349c2.38,0,4.31,1.93,4.31,4.31s-1.93,4.31-4.31,4.31-4.31-1.93-4.31-4.31,1.93-4.31,4.31-4.31Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="466.54" cy="2234.77" r="4.21" fill="#00d1b4" />
@@ -14702,6 +14770,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1899.39,1505.11c1.47,0,2.67,1.19,2.67,2.67s-1.19,2.67-2.67,2.67-2.67-1.19-2.67-2.67,1.19-2.67,2.67-2.67Z" fill="#00d1b4" opacity=".83" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1964.56" cy="1508.39" r="2.57" fill="#00d1b4" opacity=".78" />
@@ -14761,6 +14830,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m765.38,2036.71c2.04,0,3.69,1.65,3.69,3.69s-1.65,3.69-3.69,3.69-3.69-1.65-3.69-3.69,1.65-3.69,3.69-3.69Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="947.75" cy="2053.95" r="3.59" fill="#00d1b4" />
@@ -14820,6 +14890,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1733.86,1537.64c1.47,0,2.67,1.19,2.67,2.67s-1.19,2.67-2.67,2.67-2.67-1.19-2.67-2.67,1.19-2.67,2.67-2.67Z" fill="#00d1b4" opacity=".86" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1804.88" cy="1519.99" r="2.57" fill="#00d1b4" opacity=".78" />
@@ -14834,6 +14905,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1798.41,1404.94c1.42,0,2.57,1.15,2.57,2.57s-1.15,2.57-2.57,2.57-2.57-1.15-2.57-2.57,1.15-2.57,2.57-2.57Z" fill="#00d1b4" opacity=".75" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1786.3" cy="1370.46" r="2.57" fill="#00d1b4" opacity=".74" />
@@ -14863,6 +14935,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m480.49,2417.55c2.21,0,4,1.79,4,4s-1.79,4-4,4-4-1.79-4-4,1.79-4,4-4Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="543.3" cy="2321.59" r="3.9" fill="#00d1b4" />
@@ -14877,6 +14950,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m666.14,2162.32c2.04,0,3.69,1.65,3.69,3.69s-1.65,3.69-3.69,3.69-3.69-1.65-3.69-3.69,1.65-3.69,3.69-3.69Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="792.68" cy="2112.34" r="3.59" fill="#00d1b4" />
@@ -14936,6 +15010,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1612.25,1526.86c1.47,0,2.67,1.19,2.67,2.67s-1.19,2.67-2.67,2.67-2.67-1.19-2.67-2.67,1.19-2.67,2.67-2.67Z" fill="#00d1b4" opacity=".81" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1685.21" cy="1526.66" r="2.57" fill="#00d1b4" opacity=".8" />
@@ -14990,6 +15065,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m642.85,2264.02c2.04,0,3.69,1.65,3.69,3.69s-1.65,3.69-3.69,3.69-3.69-1.65-3.69-3.69,1.65-3.69,3.69-3.69Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="721.15" cy="2182.33" r="3.59" fill="#00d1b4" />
@@ -14999,6 +15075,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m815.77,2130.92c1.93,0,3.49,1.56,3.49,3.49s-1.56,3.49-3.49,3.49-3.49-1.56-3.49-3.49,1.56-3.49,3.49-3.49Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1095.84" cy="2111.52" r="3.28" fill="#00d1b4" />
@@ -15008,6 +15085,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1402.99,2189.21c1.64,0,2.98,1.33,2.98,2.98s-1.33,2.98-2.98,2.98-2.98-1.33-2.98-2.98,1.33-2.98,2.98-2.98Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1561.86" cy="2162.12" r="2.98" fill="#00d1b4" />
@@ -15087,6 +15165,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1793.59,1318.12c1.3,0,2.36,1.06,2.36,2.36s-1.06,2.36-2.36,2.36-2.36-1.06-2.36-2.36,1.06-2.36,2.36-2.36Z" fill="#00d1b4" opacity=".63" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1786.51" cy="1276.05" r="2.26" fill="#00d1b4" opacity=".62" />
@@ -15176,6 +15255,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1476.37,1581.15c1.42,0,2.57,1.15,2.57,2.57s-1.15,2.57-2.57,2.57-2.57-1.15-2.57-2.57,1.15-2.57,2.57-2.57Z" fill="#00d1b4" opacity=".77" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1544.92" cy="1548.31" r="2.57" fill="#00d1b4" opacity=".75" />
@@ -15210,6 +15290,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1769.16,1378.77c1.25,0,2.26,1.01,2.26,2.26s-1.01,2.26-2.26,2.26-2.26-1.01-2.26-2.26,1.01-2.26,2.26-2.26Z" fill="#00d1b4" opacity=".59" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1785.07" cy="1316.99" r="2.26" fill="#00d1b4" opacity=".6" />
@@ -15279,10 +15360,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1384.62,1716.31c1.47,0,2.67,1.19,2.67,2.67s-1.19,2.67-2.67,2.67-2.67-1.19-2.67-2.67,1.19-2.67,2.67-2.67Z" fill="#00d1b4" opacity=".83" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1413.56" cy="1665" r="2.57" fill="#00d1b4" opacity=".8" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1429.88" cy="1631.75" r="2.57" fill="#00d1b4" opacity=".74" />
@@ -15312,6 +15395,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1678.13,1437.99c1.3,0,2.36,1.06,2.36,2.36s-1.06,2.36-2.36,2.36-2.36-1.06-2.36-2.36,1.06-2.36,2.36-2.36Z" fill="#00d1b4" opacity=".63" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1692.81" cy="1416.54" r="2.26" fill="#00d1b4" opacity=".62" />
@@ -15331,6 +15415,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m659.27,2491.95c1.87,0,3.39,1.52,3.39,3.39s-1.52,3.39-3.39,3.39-3.39-1.52-3.39-3.39,1.52-3.39,3.39-3.39Z" fill="#00d1b4" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="703.4" cy="2387.69" r="3.28" fill="#00d1b4" />
@@ -15420,14 +15505,17 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1614.3,1569.45c1.25,0,2.26,1.01,2.26,2.26s-1.01,2.26-2.26,2.26-2.26-1.01-2.26-2.26,1.01-2.26,2.26-2.26Z" fill="#00d1b4" opacity=".62" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1653.71" cy="1534.77" r="2.26" fill="#00d1b4" opacity=".61" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1693.01" cy="1484.27" r="2.26" fill="#00d1b4" opacity=".59" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1707.89" cy="1453.9" r="2.26" fill="#00d1b4" opacity=".58" />
@@ -15492,10 +15580,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1320.28,1977.39c1.47,0,2.67,1.19,2.67,2.67s-1.19,2.67-2.67,2.67-2.67-1.19-2.67-2.67,1.19-2.67,2.67-2.67Z" fill="#00d1b4" opacity=".81" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1349.12" cy="1945.27" r="2.57" fill="#00d1b4" opacity=".76" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1358.25" cy="1877.23" r="2.57" fill="#00d1b4" opacity=".76" />
@@ -15530,10 +15620,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1531.69,1617.07c1.3,0,2.36,1.06,2.36,2.36s-1.06,2.36-2.36,2.36-2.36-1.06-2.36-2.36,1.06-2.36,2.36-2.36Z" fill="#00d1b4" opacity=".63" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1602.91" cy="1596.34" r="2.26" fill="#00d1b4" opacity=".6" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1650.73" cy="1585.56" r="2.26" fill="#00d1b4" opacity=".58" />
@@ -15598,6 +15690,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1222.17,2115.63c1.47,0,2.67,1.19,2.67,2.67s-1.19,2.67-2.67,2.67-2.67-1.19-2.67-2.67,1.19-2.67,2.67-2.67Z" fill="#00d1b4" opacity=".83" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1254.8" cy="2051.89" r="2.57" fill="#00d1b4" opacity=".79" />
@@ -15637,6 +15730,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1447.43,1725.55c1.3,0,2.36,1.06,2.36,2.36s-1.06,2.36-2.36,2.36-2.36-1.06-2.36-2.36,1.06-2.36,2.36-2.36Z" fill="#00d1b4" opacity=".63" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1505.41" cy="1675.16" r="2.26" fill="#00d1b4" opacity=".62" />
@@ -15646,6 +15740,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1576.02,1659.04c1.25,0,2.26,1.01,2.26,2.26s-1.01,2.26-2.26,2.26-2.26-1.01-2.26-2.26,1.01-2.26,2.26-2.26Z" fill="#00d1b4" opacity=".57" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1590.18" cy="1638.21" r="2.26" fill="#00d1b4" opacity=".57" />
@@ -15705,10 +15800,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1180.91,2192.49c1.47,0,2.67,1.19,2.67,2.67s-1.19,2.67-2.67,2.67-2.67-1.19-2.67-2.67,1.19-2.67,2.67-2.67Z" fill="#00d1b4" opacity=".81" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1281.9" cy="2170.74" r="2.57" fill="#00d1b4" opacity=".75" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1292.77" cy="2124.76" r="2.57" fill="#00d1b4" opacity=".75" />
@@ -15743,6 +15840,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1412.44,1795.64c1.25,0,2.26,1.01,2.26,2.26s-1.01,2.26-2.26,2.26-2.26-1.01-2.26-2.26,1.01-2.26,2.26-2.26Z" fill="#00d1b4" opacity=".62" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1471.24" cy="1747.1" r="2.26" fill="#00d1b4" opacity=".59" />
@@ -15777,6 +15875,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1761.77,1601.16c1.13,0,2.05.92,2.05,2.05s-.92,2.05-2.05,2.05-2.05-.92-2.05-2.05.92-2.05,2.05-2.05Z" fill="#00d1b4" opacity=".48" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1815.75" cy="1560.42" r="1.95" fill="#00d1b4" opacity=".46" />
@@ -15846,10 +15945,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1357.84,1904.22c1.3,0,2.36,1.06,2.36,2.36s-1.06,2.36-2.36,2.36-2.36-1.06-2.36-2.36,1.06-2.36,2.36-2.36Z" fill="#00d1b4" opacity=".63" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1351.27" cy="1831.15" r="2.26" fill="#00d1b4" opacity=".62" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1402.58" cy="1800.46" r="2.26" fill="#00d1b4" opacity=".6" />
@@ -15879,18 +15980,22 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1728.42,1685.21c1.13,0,2.05.92,2.05,2.05s-.92,2.05-2.05,2.05-2.05-.92-2.05-2.05.92-2.05,2.05-2.05Z" fill="#00d1b4" opacity=".48" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1764.65" cy="1672.49" r="1.95" fill="#00d1b4" opacity=".46" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1795.54" cy="1643.86" r="1.95" fill="#00d1b4" opacity=".45" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1853.31" cy="1631.95" r="1.95" fill="#00d1b4" opacity=".43" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1857.93" cy="1608.35" r="1.95" fill="#00d1b4" opacity=".42" />
@@ -15900,6 +16005,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1059.4,2452.44c1.47,0,2.67,1.19,2.67,2.67s-1.19,2.67-2.67,2.67-2.67-1.19-2.67-2.67,1.19-2.67,2.67-2.67Z" fill="#00d1b4" opacity=".82" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1114.72" cy="2397.85" r="2.57" fill="#00d1b4" opacity=".79" />
@@ -15934,6 +16040,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1390.88,2102.8c1.25,0,2.26,1.01,2.26,2.26s-1.01,2.26-2.26,2.26-2.26-1.01-2.26-2.26,1.01-2.26,2.26-2.26Z" fill="#00d1b4" opacity=".61" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1393.55" cy="2070.06" r="2.26" fill="#00d1b4" opacity=".62" />
@@ -15943,10 +16050,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1345.42,1953.89c1.25,0,2.26,1.01,2.26,2.26s-1.01,2.26-2.26,2.26-2.26-1.01-2.26-2.26,1.01-2.26,2.26-2.26Z" fill="#00d1b4" opacity=".6" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1359.07" cy="1921.25" r="2.26" fill="#00d1b4" opacity=".59" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1379.49" cy="1895.8" r="2.26" fill="#00d1b4" opacity=".58" />
@@ -15981,6 +16090,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1732.22,1740.53c1.08,0,1.95.87,1.95,1.95s-.87,1.95-1.95,1.95-1.95-.87-1.95-1.95.87-1.95,1.95-1.95Z" fill="#00d1b4" opacity=".46" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1782.5" cy="1730.47" r="1.95" fill="#00d1b4" opacity=".44" />
@@ -16020,6 +16130,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1283.85,2343.15c1.3,0,2.36,1.06,2.36,2.36s-1.06,2.36-2.36,2.36-2.36-1.06-2.36-2.36,1.06-2.36,2.36-2.36Z" fill="#00d1b4" opacity=".66" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1374.05" cy="2298.4" r="2.26" fill="#00d1b4" opacity=".62" />
@@ -16034,6 +16145,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1419.62,2204.4c1.25,0,2.26,1.01,2.26,2.26s-1.01,2.26-2.26,2.26-2.26-1.01-2.26-2.26,1.01-2.26,2.26-2.26Z" fill="#00d1b4" opacity=".59" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1438.91" cy="2169.09" r="2.26" fill="#00d1b4" opacity=".58" />
@@ -16043,6 +16155,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1401.35,2077.96c1.25,0,2.26,1.01,2.26,2.26s-1.01,2.26-2.26,2.26-2.26-1.01-2.26-2.26,1.01-2.26,2.26-2.26Z" fill="#00d1b4" opacity=".59" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1377.54" cy="2020.08" r="2.26" fill="#00d1b4" opacity=".58" />
@@ -16072,10 +16185,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1584.03,1839.87c1.13,0,2.05.92,2.05,2.05s-.92,2.05-2.05,2.05-2.05-.92-2.05-2.05.92-2.05,2.05-2.05Z" fill="#00d1b4" opacity=".49" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1718.16" cy="1839.56" r="1.95" fill="#00d1b4" opacity=".45" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1731.5" cy="1808.06" r="1.95" fill="#00d1b4" opacity=".45" />
@@ -16115,10 +16230,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1262.6,2430.48c1.3,0,2.36,1.06,2.36,2.36s-1.06,2.36-2.36,2.36-2.36-1.06-2.36-2.36,1.06-2.36,2.36-2.36Z" fill="#00d1b4" opacity=".65" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1327.56" cy="2385.63" r="2.26" fill="#00d1b4" opacity=".62" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1409.46" cy="2333.4" r="2.26" fill="#00d1b4" opacity=".59" />
@@ -16168,10 +16285,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1562.06,1902.27c1.13,0,2.05.92,2.05,2.05s-.92,2.05-2.05,2.05-2.05-.92-2.05-2.05.92-2.05,2.05-2.05Z" fill="#00d1b4" opacity=".47" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1657.81" cy="1877.74" r="1.95" fill="#00d1b4" opacity=".45" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1751.3" cy="1875.89" r="1.95" fill="#00d1b4" opacity=".43" />
@@ -16211,10 +16330,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1264.96,2471.02c1.3,0,2.36,1.06,2.36,2.36s-1.06,2.36-2.36,2.36-2.36-1.06-2.36-2.36,1.06-2.36,2.36-2.36Z" fill="#00d1b4" opacity=".64" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1327.46" cy="2439.41" r="2.26" fill="#00d1b4" opacity=".6" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1358.56" cy="2415.39" r="2.26" fill="#00d1b4" opacity=".58" />
@@ -16264,10 +16385,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1533.23,1942.39c1.13,0,2.05.92,2.05,2.05s-.92,2.05-2.05,2.05-2.05-.92-2.05-2.05.92-2.05,2.05-2.05Z" fill="#00d1b4" opacity=".47" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1614.4" cy="1942.6" r="1.95" fill="#00d1b4" opacity=".44" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1660.17" cy="1939.32" r="1.95" fill="#00d1b4" opacity=".43" />
@@ -16307,6 +16430,7 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1907.71,1742.58c.96,0,1.74.78,1.74,1.74s-.78,1.74-1.74,1.74-1.74-.78-1.74-1.74.78-1.74,1.74-1.74Z" fill="#00d1b4" opacity=".34" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1294.11" cy="2488.67" r="2.26" fill="#00d1b4" opacity=".59" />
@@ -16361,10 +16485,12 @@ export const BackgroundConstellacion = () => {
 
                                     d="m1528.3,2017.41c1.08,0,1.95.87,1.95,1.95s-.87,1.95-1.95,1.95-1.95-.87-1.95-1.95.87-1.95,1.95-1.95Z" fill="#00d1b4" opacity=".45" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1535.18" cy="1987.55" r="1.95" fill="#00d1b4" opacity=".46" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="1618.92" cy="1984.37" r="1.95" fill="#00d1b4" opacity=".42" />
@@ -16422,15 +16548,18 @@ export const BackgroundConstellacion = () => {
 
                                         d="m573.85,1196.68c-.49,0-4.48-.09-7.5-3.06-2.18-2.15-3.29-5.24-3.29-9.2v-11.94h1v11.94c0,3.68,1,6.53,2.98,8.48,2.85,2.81,6.81,2.79,6.85,2.78h44.21v1h-44.2s-.02,0-.04,0Z" />
                                     <motion.circle
+                                        initial={initial}
                                         transition={transition}
                                         animate={animateCircle}
                                         cx="563.56" cy="1170" r="2.54" />
                                 </g>
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="552.03" cy="1201.99" r="2.54" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="594.45" cy="1201.99" r="2.54" />
@@ -16442,6 +16571,7 @@ export const BackgroundConstellacion = () => {
 
                                         d="m620.24,1209.13h-32.73s-3.99-.03-6.84,2.78c-1.98,1.96-2.98,4.81-2.98,8.48v2.32h-1v-2.32c0-3.96,1.1-7.05,3.29-9.2,3.02-2.96,7.01-3.06,7.5-3.06h32.6c.04.33.1.67.16,1Z" />
                                     <motion.circle
+                                        initial={initial}
                                         transition={transition}
                                         animate={animateCircle}
                                         cx="577.19" cy="1225.18" r="2.54" />
@@ -16455,15 +16585,18 @@ export const BackgroundConstellacion = () => {
 
                                         d="m762.06,1196.68c.49,0,4.48-.09,7.5-3.06,2.18-2.15,3.29-5.24,3.29-9.2v-11.94s-1,0-1,0v11.94c0,3.68-1,6.53-2.98,8.48-2.85,2.81-6.81,2.79-6.85,2.78h-44.21s0,1,0,1h44.2s.02,0,.04,0Z" />
                                     <motion.circle
+                                        initial={initial}
                                         transition={transition}
                                         animate={animateCircle}
                                         cx="772.35" cy="1170" r="2.54" />
                                 </g>
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="783.88" cy="1201.99" r="2.54" />
                                 <motion.circle
+                                    initial={initial}
                                     transition={transition}
                                     animate={animateCircle}
                                     cx="741.46" cy="1201.99" r="2.54" />
@@ -16475,6 +16608,7 @@ export const BackgroundConstellacion = () => {
 
                                         d="m759.22,1220.39v2.32h-1v-2.32c0-3.67-1-6.52-2.98-8.48-2.85-2.81-6.81-2.78-6.84-2.78h-33.11c.06-.33.12-.67.16-1h32.98c.49,0,4.48.1,7.5,3.06,2.19,2.15,3.29,5.24,3.29,9.2Z" />
                                     <motion.circle
+                                        initial={initial}
                                         transition={transition}
                                         animate={animateCircle}
                                         cx="758.73" cy="1225.18" r="2.54" />
