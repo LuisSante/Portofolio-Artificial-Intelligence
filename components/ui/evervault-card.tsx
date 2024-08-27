@@ -6,32 +6,14 @@ import React, { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 export const EvervaultCard = ({ text, icon, className }: { text?: string; icon?: React.ReactNode; className?: string }) => {
-    const mouseX = useMotionValue(0);
-    const mouseY = useMotionValue(0);
-
     const [randomString, setRandomString] = useState('');
-
-    useEffect(() => {
-        const str = generateRandomString(1500);
-        setRandomString(str);
-    }, []);
-
-    function onMouseMove({ currentTarget, clientX, clientY }: any) {
-        const { left, top } = currentTarget.getBoundingClientRect();
-        mouseX.set(clientX - left);
-        mouseY.set(clientY - top);
-
-        const str = generateRandomString(1500);
-        setRandomString(str);
-    }
 
     return (
         <div className={cn('p-0.5  bg-transparent aspect-square  flex items-center justify-center w-full h-full relative', className)}>
             <div
-                onMouseMove={onMouseMove}
                 className="relative flex justify-center items-center bg-transparent rounded-3xl overflow-hidden group/card size-full"
             >
-                <CardPattern mouseX={mouseX} mouseY={mouseY} randomString={randomString} />
+                <CardPattern randomString={randomString} />
                 <div className="relative z-10 flex justify-center items-center">
                     <div className="relative flex flex-col justify-center items-center rounded-full font-bold text-4xl text-white size-44">
                         <div className="absolute bg-black/[0.8] blur-sm rounded-full size-full" />
@@ -63,15 +45,6 @@ export function CardPattern({ mouseX, mouseY, randomString }: any) {
         </div>
     );
 }
-
-const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-export const generateRandomString = (length: number) => {
-    let result = '';
-    for (let i = 0; i < length; i++) {
-        result += characters.charAt(Math.floor(Math.random() * characters.length));
-    }
-    return result;
-};
 
 export const Icon = ({ className, ...rest }: any) => {
     return (
