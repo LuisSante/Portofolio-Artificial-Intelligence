@@ -1,13 +1,18 @@
 import { cn } from "@/lib/utils";
 // import { Montserrat } from "next/font/google";
 import { Caveat } from "next/font/google";
-// import { Rajdhani } from "next/font/google";
+import { Rajdhani } from "next/font/google";
 
 interface TechnologyFooterFolderProps {
     tech?: string;
 }
 
-const typeFont = Caveat({
+export const typeFont = Caveat({
+    subsets: ["latin"],
+    weight: ["400", "500", "700"],
+});
+
+export const typeFontRajdhani = Rajdhani({
     subsets: ["latin"],
     weight: ["400", "500", "700"],
 });

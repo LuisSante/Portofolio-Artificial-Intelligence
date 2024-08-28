@@ -57,7 +57,7 @@ const projects: ProjectsProps[] = [
     },
     {
         title: 'AI for E-Commerce Profitability Insights',
-        link: 'https://github.com/LuisSante/Image-Classification',
+        link: 'https://github.com/LuisSante/LexCom',
         linkPage: 'https://lexcom.tech/',
         icon: < FaChartLine />,
         description: "Led the development of an AI-based product profitability prediction system for an e-commerce platform, plus extra services such as text generators using OpenAi API, the project covers from backend and frontend development to cloud deployment. Utilized data balancing techniques such as SMOTE during the training phase to enhance dataset accuracy and improve model performance",
